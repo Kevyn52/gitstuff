@@ -1,6 +1,8 @@
-print("Hello", end=" ")
-def print_str(str):
-    print(str)
+import sounddevice as sd
+import numpy as np
+import os
+from scipy.io.wavfile import write
+import msvcrt
 
-if __name__ == "main":
-    print_str("World")
+SAMPLE_RATE = 22050
+DURATION = 1
