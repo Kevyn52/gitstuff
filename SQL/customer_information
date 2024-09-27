@@ -1,0 +1,8 @@
+CREATE TABLE `customer_information` (
+  `timestamp` timestamp NOT NULL DEFAULT current_timestamp(),
+  `customer_name` text NOT NULL,
+  `company_name` text NOT NULL,
+  `email` text NOT NULL,
+  `subject` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+COMMIT;

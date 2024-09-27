@@ -1,0 +1,6 @@
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_message`(IN `p_customer_name` TEXT CHARSET utf8, IN `p_company_name` TEXT CHARSET utf8, IN `p_email` TEXT CHARSET utf8, IN `p_subject` TEXT CHARSET utf8)
+BEGIN
+	INSERT INTO `customer_information`(`customer_name`, `company_name`, `email`, `subject`) VALUES (p_customer_name, p_company_name, p_email, p_subject);
+END$$
+DELIMITER ;
