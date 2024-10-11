@@ -118,14 +118,13 @@
     </div>
 
     <div class="email">
-        <input type="email" id="email" name="email" placeholder="EMAIL" autocomplete="off" required>
+        <input type="text" id="email" name="email" placeholder="EMAIL" autocomplete="off" required>
     </div>
 
     <div class="subject">
         <textarea id="subject" name="subject" placeholder="SEND US A MESSAGE!" style="height:200px" required></textarea>
-    </div>
-
-    <input type="submit" value="Submit">
+        <input type="submit" value="Submit">
+      </div>
 
      <div class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.732070842396!2d120.25365927518632!3d22.960092479217572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e73f99013585b%3A0x5989d16f94fd0a!2sNo.%2089%2C%20Renyi%206th%20St%2C%20Rende%20District%2C%20Tainan%20City%2C%20717!5e0!3m2!1sen!2stw!4v1689229191783!5m2!1sen!2stw" 
@@ -161,7 +160,7 @@
 
     <!--redirect-->
   <script>
-    fdocument.getElementById('contactForm').addEventListener('submit', function(e) {
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault(); // Prevent the default form submission
 
     const firstname = document.getElementById('fname').value;
