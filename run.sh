@@ -1,1 +1,2 @@
-mysqld_safe --user=mysql &
+service mysql start
+python3 main.py

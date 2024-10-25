@@ -1,3 +1,5 @@
+-- recieve messages
+
 DELIMITER $$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_message`(IN `p_customer_name` TEXT CHARSET utf8, IN `p_company_name` TEXT CHARSET utf8, IN `p_email` TEXT CHARSET utf8, IN `p_subject` TEXT CHARSET utf8)
 BEGIN

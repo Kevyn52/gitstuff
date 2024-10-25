@@ -1,6 +1,0 @@
-DELIMITER $$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `get_all_message`()
-BEGIN
-	SELECT `customer_name`, `company_name`, `email`, `subject` FROM `customer_information` ORDER BY `timestamp` ASC;
-END$$
-DELIMITER ;

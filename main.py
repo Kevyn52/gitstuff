@@ -23,6 +23,7 @@ except Exception as e:
     print(f"資料庫不存在或連線失敗: {e}")
     exit()
 
+# 從 csv 匯入資料庫
 # data = []
 # flag = False
 # with open("TKS contact form - Sheet1.csv", newline="", encoding="utf-8") as csvfile:
